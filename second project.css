@@ -1,0 +1,640 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+  flex-direction: column;
+}
+#nav-bar /*styling nav-bar*/
+{
+flex-direction: column;
+position: relative;
+position:fixed;
+width: 100%;
+}
+#nav-bar::before /*giving background color to nav bar*/
+{
+    background: rgb(65, 50, 50);
+    content: " ";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#toggle /*styling logo*/
+{
+    font-size: 3rem;
+color: rgb(231, 8, 8);
+position: fixed;
+width: 5rem;
+align-items: center;
+display: flex;
+justify-content: center;
+background-color: rgb(32, 28, 28);
+position: absolute;
+}
+.nav-list
+{
+  flex-direction: column;
+}
+.nav-list li
+{
+  list-style: none;
+}
+.nav-list a  /*styling nav-list items*/
+{ 
+  font-size: 1.6rem;
+    margin-top: 2.5rem;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  flex-direction: column;
+  text-align: center;
+  color: aliceblue;
+}
+.nav-list a:hover  /*adding hover effect to navlist items*/
+{
+    background: rgb(20, 16, 17);
+}
+.nav-list{
+    display: none;
+}
+#title
+{  /*styling to main title*/
+  background-color: rgb(32, 28, 28);
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+font-weight: bolder;
+}
+.title1 /*giving color to title1 ,fitness*/
+{
+  color: blue;
+}
+.title2
+{ /*giving color to title 2 ,sport*/
+  color: brown;
+} 
+/*adding media query for the title , fitness sport*/
+@media (max-width:600px) {
+  #title
+  {
+    font-size: 2rem;
+  }
+  #toggle
+  {
+    width: 3rem;
+    font-size: 2rem;
+  }
+  
+}
+@media (max-width:740px) {
+  .nav-list a 
+  {
+    font-size: 1rem;
+    margin-top: 1.7rem;
+    padding: .7rem;
+  }
+}
+    
+
+/*section part*/
+
+
+#section
+{    /*adding background image to section part*/
+  background: url('sectionbg.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+ z-index: -1;
+ overflow: hidden;
+}
+.section-containt /*styling section containt bar*/
+{
+  padding-top: 15rem;
+  text-align: center;
+}
+.line1  /*styling text in side the section bar*/
+{
+  font-size: 4rem;
+  color: blanchedalmond;
+  font-weight: bolder;
+  
+}
+.line2  /*styling text in side the section bar*/
+{
+  font-size: 4rem;
+  color: brown;
+  font-weight: bolder
+}
+.line3  /*styling text in side the section bar*/
+{
+  font-size: 4rem;
+  color: blue;
+  font-weight: bolder;
+
+}
+
+.image  /*styling imgae inside the section*/
+{
+  width: 6.5rem;
+  height: 6.5rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 2.2rem;
+  z-index: 1;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+
+   
+
+
+
+
+
+/*adding media query to section bar after 750px screen resolution*/
+
+@media (max-width:750px) {
+
+  .line1
+{
+  font-size: 2.7rem;
+  color: blanchedalmond;
+}
+.line2
+{
+  font-size: 2.7rem;
+  color: brown;
+}
+.line3
+{
+  font-size: 2.7rem;
+  color: blue;
+}
+.image
+{
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-top: 2rem;
+ 
+}
+}
+
+
+
+
+
+
+
+/*adding media query to section bar after 500px screen resolution*/
+
+@media (max-width:500px) {
+
+  .line1
+{
+  font-size: 1.4rem;
+  color: blanchedalmond;
+}
+.line2
+{
+  font-size: 1.4rem;
+  color: brown;
+}
+.line3
+{
+  font-size: 1.4rem;
+  color: blue;
+}
+}
+
+   
+
+
+
+
+
+
+/*now styling about par in the section bar*/
+
+#about /*styling about part*/
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 100%;
+padding-top: 5rem;
+}
+.about1 /*styling info1 and img1*/
+{ 
+  display: flex;
+  border: solid white 2px;
+  background-color: rgb(143, 125, 125);
+  margin: 1rem;
+  
+}
+.about1:hover  /*adding hover property on about box 1*/
+{
+  box-shadow: white  16px 16px 16px ;
+
+}
+.about2 /*styling info2 and img2*/
+{
+  display: flex;
+  border: solid white 2px;
+  background-color: rgb(143, 125, 125);
+  margin: 1rem;
+}
+.about2:hover  /*adding hover property on about box 2*/
+{
+  box-shadow: white  16px 16px 16px ;
+  
+}
+.about3 /*styling info3 and img3*/
+{
+  display: flex;
+  border: solid white 2px;
+  background-color: rgb(143, 125, 125);
+  margin: 1rem;
+}
+.about3:hover /*adding hover property on about box 3*/
+{
+  box-shadow: white  16px 16px 16px ;
+  
+}
+
+.about-title/*styling about heading*/
+{
+  color: rgb(233, 7, 19);
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
+
+
+
+.info1  /*styling info of the about1*/
+{
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+}
+.info2 /*styling info of the about2*/
+{
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+}
+.info3 /*styling info of the about3*/
+{
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+}
+
+.img1 /*styling img in the about1*/
+{
+  height: 100%;
+}
+.img2  /*styling img in the about2*/
+{
+  height: 100%;
+}
+.img3  /*styling img in the about3*/
+{
+  height: 100%;
+}
+
+.d1  /*displaying none in the media query*/
+{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: blue;
+}
+.t
+{  /*displaying block in the media query*/
+  display: none;
+}
+
+@media (max-width:750px) {  /*applying media query for screen 750px*/
+  .about1
+  {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .about2
+  {
+flex-direction: column;
+justify-content: center;
+text-align: center;
+  }
+  .about3
+  {
+flex-direction: column;
+justify-content: center;
+text-align: center;
+  }
+  .d1
+{
+  display: none;
+}
+.t
+{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: blue;
+}
+.about-title
+{
+  font-size: 3.4rem;
+}
+
+
+} /*applying media query for screen 350px*/
+@media (max-width:350px) {
+  .img1
+{
+  height: 100%;
+}
+.img2
+{
+  height: 100%;
+}
+.img3
+{
+  height: 100%;
+}
+
+  
+}
+     
+
+
+
+
+/*styling to contact us section part*/
+
+
+#contactus /*styling contactus part*/
+{
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.contact-lable /*styling contact us lable*/
+{
+  font-size: 5rem;
+  font-weight: bolder;
+  color: red;
+
+}  /*styling contact us form*/
+#form
+{
+  border: solid white 1px;
+margin: 2rem;
+border-radius: 2rem;
+}
+
+input[type="text"]/*styling inputs of the form items*/
+{
+  width:85%;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 2rem;
+  margin: 1rem;
+  outline: none;
+}
+input[type="text"]:hover
+{
+  width: 90%;
+  height: 3rem;
+}
+
+input[type="email"]  /*styling inputs of the form items*/
+{
+  width:85%;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 2rem;
+  margin: 1rem;
+  outline: none;
+}
+input[type="email"]:hover
+{
+  width: 90%;
+  height: 3rem;
+}
+
+input[type="textarea"]  /*styling inputs of the form items*/
+{
+  width:85%;
+  height: 2.4rem;
+  text-align: center;
+  border-radius: 2rem;
+  margin: 1rem;
+  outline: none;
+}
+input[type="textarea"]:hover
+{
+  width: 90%;
+  height: 3rem;
+}
+#form button  /*styling submit here button*/
+{
+  width: 5rem;
+  height: 3rem;
+  background-color: brown;
+  margin: 1.1rem;
+}  
+#form button:hover
+{
+  width: 5.4rem;
+  height: 3.2rem;
+  background-color: blue;
+}
+
+ #form a  /*styling contac us icons*/
+ {
+   text-decoration: none;
+   font-size: 3rem;
+   font-weight: bolder;
+   margin: 3rem;
+   color: brown;
+   margin-bottom: 6rem;
+ }
+ @media(max-width:550px)
+ {
+  .contact-lable /*styling contact us lable*/
+  {
+    font-size: 2.6rem;
+    font-weight: bolder;
+    color: brown;
+  
+  } 
+  
+ #form a  
+ {
+   font-size: 1.8rem;
+ }
+ }
+
+
+
+
+/*styling services part*/
+ #services
+ {
+   border: solid white 1px;
+   margin: 2rem;
+   border-radius: 2rem;
+ }
+ .services-lable >h1 /*styling services heading*/
+ {
+   color: red;
+   font-weight: bolder;
+   font-size: 4rem;
+   text-align: center;
+   margin: 1.5rem;
+ }
+
+
+.services-info /*stylinhg services info block */
+{
+  border: solid white 1px;
+  border-radius: 2rem;
+  display: flex;
+  margin: 1rem;
+  background-color: rgb(139, 135, 135);
+}
+.services-info1 /*styling services info 1  in to block*/
+
+{
+  width: 50%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  border-radius: 2rem;
+  margin:.7rem;
+}
+.services-info2 /*styling services info 2 in a block*/
+{
+  width: 50%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  border-radius: 2rem;
+  margin:.7rem;
+}
+.services-img img   /*styling img in services section part*/
+{
+  width: 17rem;
+  height: 17rem;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.services-info2>h1  /*styling services info 1 heading*/
+  {
+    margin: 5px;
+    color: red;
+  }
+
+  .services-info1>h1 /*styling services info 2 heading*/
+  {
+  margin: 5px;
+  color: red;
+  }
+  .services-img img:hover
+  {
+    box-shadow: wheat 8px 8px 8px 8px ;
+  }
+@media (max-width:700px) {
+
+  .services-info1 p 
+  {
+      font-size: .7rem;
+  }
+  .services-info2 p 
+  {
+      font-size: .7rem;
+  }
+  .services-info2>h1
+  {
+    font-size: 1.3rem;
+  }
+  .services-info1 >h1 
+  {
+    font-size: 1.3rem;
+  }
+  .services-img img
+  {
+    width: 10rem;
+    height: 10rem;
+  }
+  .services-lable >h1 
+  {
+    font-size: 2rem;
+  }
+}
+
+
+
+@media (max-width:470px) {
+
+  .services-info1 p 
+  {
+      font-size: .3rem
+  }
+  .services-info2 p 
+  {
+      font-size: .3rem;
+  }
+  .services-info2>h1
+  {
+    font-size: .7rem;
+  }
+  .services-info1 >h1 
+  {
+    font-size: .7rem;
+  }
+  .services-img img
+  {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+
+#footer
+{
+  background-color: rgb(63, 57, 57);
+  text-align: center;
+  color: white;
+}
+#footer p{
+padding:.4rem
+}
